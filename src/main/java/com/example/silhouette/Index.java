@@ -583,7 +583,7 @@ public final class Index implements Listener, CommandExecutor, TabCompleter {
     }
 
     private void closeLater(Player player) {
-        plugin.getServer().getScheduler().runTask(plugin, player::closeInventory);
+        plugin.getServer().getScheduler().runTask(plugin, () -> player.closeInventory());
     }
 
     // ------------------------------------------------------------------ /index
