@@ -1,0 +1,46 @@
+name: WispSMP
+version: 1.0.0
+main: com.example.silhouette.SilhouettePlugin
+api-version: '1.21'
+description: Wisp SMP items - Silhouette (true invisibility chestplate), snorlax (a snowball that freezes what it hits), division (a fishing rod that swaps places), Index (a bundle that scrambles and steals inventories) and Dilation (a clock that slows time around you).
+depend: [ProtocolLib]
+
+# Every command is also available as /wispsmp:<command>, because that is the plugin name.
+commands:
+  silhouette:
+    description: Give yourself (or someone else) the Silhouette chestplate.
+    usage: /silhouette [player]
+    permission: silhouette.give
+  snorlax:
+    description: Give yourself (or someone else) the snorlax snowball.
+    usage: /snorlax [player]
+    permission: snorlax.give
+  division:
+    description: Give yourself (or someone else) the division fishing rod.
+    usage: /division [player]
+    permission: division.give
+  index:
+    description: Give yourself (or someone else) the Index bundle.
+    usage: /index [player]
+    permission: index.give
+  dilation:
+    description: Give yourself (or someone else) the Dilation clock.
+    usage: /dilation [player]
+    permission: dilation.give
+
+permissions:
+  silhouette.give:
+    description: Allows giving the Silhouette chestplate.
+    default: op
+  snorlax.give:
+    description: Allows giving the snorlax snowball.
+    default: op
+  division.give:
+    description: Allows giving the division fishing rod.
+    default: op
+  index.give:
+    description: Allows giving the Index bundle.
+    default: op
+  dilation.give:
+    description: Allows giving the Dilation clock.
+    default: op
